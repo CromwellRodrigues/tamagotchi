@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Niconne&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: "Black Ops One", system-ui;
+
+	/* base color */
+	background-color: #212223;
+
+	/*  first part is horizontal*/
+	/* second gradient is vertical at 90deg */
+	background-image: linear-gradient(#a8d1df 0.5rem, transparent 0.5rem),
+		linear-gradient(90deg, #a8d1df 0.5rem, transparent 0.5rem);
+
+	/* to make a square grid  */
+	background-size: 5rem 5rem;
+}
+
+h1 {
+	font-size: 90px;
+	font-weight: 600;
+	/* font-family: "Niconne", cursive; */
+	color: #806ca5;
+	text-shadow: 2px 2px 0px #d8a3dd, 4px 4px 0px #604771, 6px 6px 0px #6e276c,
+		8px 8px 0px #8f4fa0, 10px 10px 0px #553c9a;
+}
