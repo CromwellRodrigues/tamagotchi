@@ -1,15 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="style.css" />
-		<title>Tamagotchi</title>
-	</head>
-	<body>
-		<h1>Tamagotchi</h1>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tamagotchi</title>
+</head>
+<body>
+    <h1>Tamagotchi</h1>
+    <div class="details">
+        <div class="tamagotchi">Name: <span id="name"></span></div>
+        <div class="tamagotchi">Fullness: <span id="fullness"></span></div>
+        <div class="tamagotchi">Happiness: <span id="happiness"></span></div>
+        <div class="tamagotchi">Energy: <span id="energy"></span></div>
+    </div>
 
-		<script src="script1.js"></script>
-		<!-- <script src="script.js"></script> -->
-	</body>
+	    <div class="actions">
+			<button id="feedButton"> Feed
+				<span class="tooltip">Don't exceed 100</span>
+			</button>
+			<button id="playButton">Play</button>
+			<button id="sleepButton">Sleep</button>
+		</div>
+    </div>
+    <script src="script3.js"></script>
+</body>
 </html>

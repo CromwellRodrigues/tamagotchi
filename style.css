@@ -10,12 +10,14 @@
 body {
 	height: 100vh;
 	display: flex;
+	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	font-family: "Black Ops One", system-ui;
 
 	/* base color */
-	background-color: #212223;
+	/* background-color: #212223; */
+	background-color : #fcecac;
 
 	/*  first part is horizontal*/
 	/* second gradient is vertical at 90deg */
@@ -33,4 +35,90 @@ h1 {
 	color: #806ca5;
 	text-shadow: 2px 2px 0px #d8a3dd, 4px 4px 0px #604771, 6px 6px 0px #6e276c,
 		8px 8px 0px #8f4fa0, 10px 10px 0px #553c9a;
+	animation: shake 2s infinite;
+	letter-spacing: 0.3em;
+}
+
+
+.details {
+    margin-top: 20px;
+    font-size: 24px;
+    font-family: "Niconne", cursive;
+    color: #a8d1df; /* Text color */
+    background-color: #8c5ea4; /* Background color */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.details div {
+    margin: 10px 0;
+}
+
+.tamagotchi {
+	color : #b2ccd9;
+	font-size: 3rem;
+	font-family: "Black Ops One", system-ui;
+
+}
+
+#name {
+	color : #beba15;
+	font-weight: bold;
+	font-size: 3rem;
+	margin-left: 1rem;
+}
+
+
+
+
+/* Button styles */
+.actions {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center; /* Distribute buttons evenly */
+  width: 100%; /* Ensure enough width for buttons to be side by side */
+}
+
+.actions button {
+  padding: 10px 20px;
+  margin: 2rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 2rem;
+  font-family: "Black Ops One", system-ui; /* Choose the desired font */
+  background-color: #8c5ea4; /* Match background color from .details */
+  color: #a8d1df; /* Match text color from .details */
+  transition: background-color 0.2s ease-in-out; /* Add hover effect */
+}
+
+.actions button:hover {
+  background-color: #beba15; /* Button highlight on hover */
+  color: #212223; /* Text color on hover */
+
+}
+
+
+/* Tooltip styles */
+.tooltip {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%; /* Position the tooltip above the button */
+  left: 50%;
+  margin-left: -80px; /* Use half of the width (160/2 = 80), to center the tooltip */
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.actions button:hover .tooltip {
+	visibility: visible;
+  opacity: 1;
 }

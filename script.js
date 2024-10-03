@@ -1,11 +1,27 @@
-console.log("Tamagotchi");
+// console.log("Tamagotchi");
 
-let tamagotchi = {
-	name: "Ginjirotchi",
-	fullness: 50,
-	happiness: 50,
-	energy: 50,
+// let tamagotchi = {
+// 	name: "Ginjirotchi",
+// 	fullness: 50,
+// 	happiness: 50,
+// 	energy: 50,
+// };
+
+window.onload = function () {
+    let tamagotchi = {
+        name: "Ginjirotchi",
+        fullness: 50,
+        happiness: 50,
+        energy: 50,
+    };
+
+  // Update HTML elements with Tamagotchi properties
+    document.getElementById('name').innerText = tamagotchi.name;
+    document.getElementById('fullness').innerText = tamagotchi.fullness;
+    document.getElementById('happiness').innerText = tamagotchi.happiness;
+    document.getElementById('energy').innerText = tamagotchi.energy;
 };
+
 
 // change the name;
 console.log(`old name: ${tamagotchi.name}`);

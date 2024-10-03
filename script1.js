@@ -14,12 +14,33 @@ console.log("8. reset the scores back after pet has died.");
 // OBJECT
 
 window.onload = function () {
+	console.log("window loaded");
+
 	let tamagotchi = {
 		name: "Ginjirotchi",
 		fullness: 50,
 		happiness: 50,
 		energy: 50,
 	};
+
+	// Update HTML elements with Tamagotchi properties
+
+	function updateHtmlElements() {
+		console.log("updating html elements");
+		document.getElementById('name').innerText = tamagotchi.name;
+		console.log("Name:", tamagotchi.name); // Debugging statement
+		document.getElementById('fullness').innerText = tamagotchi.fullness;
+		document.getElementById('happiness').innerText = tamagotchi.happiness;
+		document.getElementById('energy').innerText = tamagotchi.energy;
+
+		  console.log("Fullness:", tamagotchi.fullness); // Debugging statement
+        console.log("Happiness:", tamagotchi.happiness); // Debugging statement
+        console.log("Energy:", tamagotchi.energy); // Debugging statement
+
+
+	}
+
+	updateHtmlElements();
 
 	// GLOBAL VARIABLE
 	let gameOn = true;
@@ -42,14 +63,14 @@ window.onload = function () {
 			gameReset();
 			return false;
 		} else if (tamagotchi.energy <= 0) {
-			console.log(`${petName} has died to no more energy 😴.`);
-			alert(`${petName} has died to no more energy 😴.`);
+			console.log(`${tamgotchi.name} has died to no more energy 😴.`);
+			alert(`${tamagotchi.name} has died to no more energy 😴.`);
 			gameOn = false;
 			gameReset();
 			return false;
 		} else if (tamagotchi.happiness <= 0) {
-			console.log(`${petName} has died due to sadness💔.`);
-			alert(`${petName} has died due to sadness💔.`);
+			console.log(`${tamagotchi.name} has died due to sadness💔.`);
+			alert(`${tamagotchi.name} has died due to sadness💔.`);
 			gameOn = false;
 			gameReset();
 			return false;
@@ -62,6 +83,7 @@ window.onload = function () {
 		tamagotchi.fullness = 50;
 		tamagotchi.energy = 50;
 		tamagotchi.happiness = 50;
+		updateHtmlElements();
 	}
 
 	// get players input on action change
@@ -88,6 +110,7 @@ window.onload = function () {
 	// function to feed and increment score
 	function toFeed() {
 		tamagotchi.fullness += 10;
+		updateHtmlElements();
 		return tamagotchi.fullness;
 	}
 
@@ -96,6 +119,7 @@ window.onload = function () {
 		tamagotchi.fullness -= 20;
 		tamagotchi.energy -= 20;
 		tamagotchi.happiness += 20;
+		updateHtmlElements(); 
 		return tamagotchi.fullness, tamagotchi.energy, tamagotchi.happiness;
 	}
 
@@ -103,6 +127,7 @@ window.onload = function () {
 	function toSleep() {
 		tamagotchi.fullness -= 10;
 		tamagotchi.energy += 20;
+		updateHtmlElements();  // update HTML elements after sleeping.
 		return tamagotchi.fullness, tamagotchi.energy;
 	}
 
@@ -123,6 +148,7 @@ window.onload = function () {
 		console.log(`${tamagotchi.name} fullness ${tamagotchi.fullness}`);
 		console.log(`${tamagotchi.name} happiness ${tamagotchi.happiness}`);
 		console.log(`${tamagotchi.name} energy ${tamagotchi.energy}`);
+		updateHtmlElements();
 	}
 
 	// play the game in a loop after players confirmation
