@@ -1,4 +1,4 @@
-### Final Ticket - REAL-WORLD EXAMPLE: TAMAGOTCHI GAME
+# Final Ticket - REAL-WORLD EXAMPLE: TAMAGOTCHI GAME
 
 Unfortunately, Keith from accounts is allergic to dogs so the office can't have animals in to boost morale. Your company has asked you to increase the happiness of staff by creating a virtual pet that everyone can play with in the office. Tamagotchi is a virtual pet simulation game.
 
