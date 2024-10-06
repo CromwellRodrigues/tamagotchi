@@ -1,9 +1,9 @@
-# Final Ticket - REAL-WORLD EXAMPLE: TAMAGOTCHI GAME
+### Final Ticket - REAL-WORLD EXAMPLE: TAMAGOTCHI GAME
 
-Unfortunately, Keith from accounts is allergic to dogs so the office can't have animals in to boost morale. Your company has asked you to increase the happiness of staff by creating a virtual pet that everyone can play with in the office. Tamagotchi is a virtual pet simulation game.
+Unfortunately, Keith from accounts is allergic to dogs  so the office can't have animals in to boost morale. Your company has asked you to increase the happiness of staff by creating a virtual pet that everyone can play with in the office. Tamagotchi is a virtual pet simulation game.
 
 
-Tasks:
+## Tasks:
 
 Create an object (representing the Tamagotchi virtual pet) that has the properties name, fullness, happiness and energy and assign values to each property (the company suggests assigning a number between 1 and 100 to each hunger, happiness and energy)
 
@@ -55,8 +55,12 @@ When the pet has died, log a message to the console to let the user know.
 
 
 
-Stretch goal: Handle the scenario where the user's input isn't valid (in other words, isn't 1, 2 or 3).
+# Stretch goal #1: 
+
+Handle the scenario where the user's input isn't valid (in other words, isn't 1, 2 or 3).
 
 
 
-Stretch goal: As an additional challenge, you could add custom methods to the Tamagotchi object that handle each action like feeding, playing and sleeping. Then instead of directly changing the Tamagotchi properties in the loop, call these new methods that will update the object for you.
+# Stretch goal #2: 
+
+As an additional challenge, you could add custom methods to the Tamagotchi object that handle each action like feeding, playing and sleeping. Then instead of directly changing the Tamagotchi properties in the loop, call these new methods that will update the object for you.
